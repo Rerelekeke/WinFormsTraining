@@ -16,5 +16,12 @@ namespace WindowsForms
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Button senderButton = (Button)sender;
+            senderButton.Text = "Bouton cliqué";
+            label1.Text = senderButton.Name + " vient d'être cliqué.";
+        }
     }
 }
