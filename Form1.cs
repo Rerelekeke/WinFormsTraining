@@ -64,6 +64,7 @@ namespace WindowsForms
         public Form1()
         {
             InitializeComponent();
+
             // À ne mettre ici que si ce n'est pas déjà dans Form1.Designer.cs
             s_myTimer.Tick += new EventHandler(s_myTimer_Tick);
 
@@ -80,7 +81,7 @@ namespace WindowsForms
             s_myCounter++;
 
 
-            if (s_myCounter >= 5)
+            if (s_myCounter >= 1)
             {
                 try
                 {
@@ -105,4 +106,6 @@ namespace WindowsForms
             MessageBox.Show("s_myCounter vaut " + s_myCounter + ".");
         }
     }
+    // CODE POUR AFFICHER LA CONSOLE
+
 }

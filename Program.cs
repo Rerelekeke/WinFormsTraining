@@ -33,6 +33,23 @@ namespace WindowsForms
                 exeDuration.Milliseconds);
 
             Console.WriteLine(exeTime);
+
+            IAnimal milou = new Dog("Milou");
+            milou.Move();
+
+
+
+            SampleClass obj = new SampleClass();
+
+            // La conversion se fait automatiquement.
+            IControl c = obj;
+            // Appelle la méthode IControl.Paint de SampleClass.
+            c.Paint();
+
+            // Là-aussi, la conversion se fait automatiquement.
+            ISurface s = obj;
+            // Appelle la méthode ISurface.Paint de SampleClass.
+            s.Paint();
         }
     }
 }
